@@ -59,7 +59,7 @@ def save_entry():
     return jsonify("Success")
 
 #Write API here
-@app.route("/bot-response",method=['POST'])
+@app.route("/bot-response",methods=['POST'])
 def bot():
     input_text=request.json.get("user_bot_input_text")
     bot_res=bot_response(input_text)
